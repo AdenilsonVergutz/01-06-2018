@@ -28,6 +28,13 @@ public class Ex05Principal {
 	public static void main(String[] args) {
 		
 	 
-	}
+		Ex05 p1 = new Ex05();
+		
+		p1.obterDados();
+		p1.obterDesconto();
 
+		
+
+	}
+	
 }

@@ -24,10 +24,54 @@ Valor: 2,00
 
 package Lista08.OO;
 
+import javax.swing.JOptionPane;
+
 public class Ex05 {
 
-
+	String produto;
+	double valor;
+	 String texto = "";
+    int indice = 1;
+	
+	public void obterDados(){
+		
+		produto = JOptionPane.showInputDialog("Informe o nome do produto");
+        valor = Double.parseDouble(JOptionPane.showInputDialog("Informe o preço do produto em R$"));
+		
 	}
 	
+	public void obterDesconto(){
+		
+		//Laço
 
+        double valorProduto = 0;
+        double valorComDescontoQuantidade = 0;
+        double percentual = 0.05;
+		while(indice <= 10){
 
+        	
+            
+			//Obter o desconto do produto
+          valorProduto = valor - valor * percentual;
+          
+          System.out.println(valorProduto);
+
+            //Obter o desconto com a quantidade
+            valorComDescontoQuantidade = valorProduto * indice;
+
+            //Criar a tabela
+            texto += indice+" | "+produto+" | " +String.format("%.2f",valorProduto)+" | Valor total: "+String.format("%.2f",valorComDescontoQuantidade)+"\n";
+            
+            
+            //Incrementar
+            percentual += 0.05;
+            indice++;
+   	
+		
+	}
+
+		 JOptionPane.showMessageDialog(null, texto);
+	
+	
+	}
+}
