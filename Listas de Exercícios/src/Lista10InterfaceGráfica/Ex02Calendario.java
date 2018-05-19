@@ -1,3 +1,9 @@
+/*Levando em consideração o calendário de 2018, mês fevereiro. Crie um algoritmo onde o usuário deve
+digitar um dia qualquer, caso esse dia seja um sábado ou um domingo deverá retornar: Final de semana,
+caso contrário deverá retornar: Dia de semana.
+Tente realizar validações como por exemplo: Se o usuário digitar um número menor que 1 ou um número
+maior que 28 retornar: Data inválida. */
+
 package Lista10InterfaceGráfica;
 
 
